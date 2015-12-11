@@ -1,0 +1,24 @@
+{
+  "name": "subttribute",
+  "version": "0.0.0",
+  "description": "JavaScript to extract HTML element attributes from the content of other attributes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tleen/subttribute.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "post-process"
+  ],
+  "author": "Thomas Leen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tleen/subttribute/issues"
+  },
+  "homepage": "https://github.com/tleen/subttribute#readme"
+}
