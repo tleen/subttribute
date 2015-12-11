@@ -10,13 +10,13 @@
 (function(){
   document.addEventListener('DOMContentLoaded', function(){
     
-    var elements = [].slice.call(document.querySelectorAll('*[title*="|"], *[alt*="|"]')) || [];
+    var elements = [].slice.call(document.querySelectorAll('*[title*="~"], *[alt*="~"]')) || [];
     
     elements.forEach(function(e){
       
       ['title', 'alt'].forEach(function(name){
 	
-	var attrs = (e.getAttribute(name) || '').split('|');
+	var attrs = (e.getAttribute(name) || '').split('~');
 	if(attrs.length === 0) return;
 
 	// set initial content as actual attribute
