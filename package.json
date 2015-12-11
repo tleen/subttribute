@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tleen/subttribute/issues"
   },
-  "homepage": "https://github.com/tleen/subttribute#readme"
+  "homepage": "https://github.com/tleen/subttribute#readme",
+  "devDependencies": {
+    "webpack": "^1.12.9"
+  }
 }
