@@ -1,3 +1,4 @@
+'use strict';
 /**
 *
 * Script to run in browser context, will scan through title and alt tags
@@ -7,7 +8,6 @@
 * element.
 */
 (function(){
-  
   document.addEventListener('DOMContentLoaded', function(){
     
     var elements = [].slice.call(document.querySelectorAll('*[title*="|"], *[alt*="|"]')) || [];
