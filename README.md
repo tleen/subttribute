@@ -8,7 +8,7 @@ Use JavaScript to extract HTML element attributes from the content of other attr
 
 ## Example
 
-See [example/index.html](example/index.html):
+See [example/index.html](example/index.html) or [run it live](https://rawgit.com/tleen/subttribute/master/example/index.html):
 
 The attributes are defined within the title or alt attributes on any element. They are seperated by the *~* character. The section preceding the first *~* is the actual content you want to end up in that attribute. The other are a series of *:* seperated attribute:value pairs. These will be attached to the same element.
 
