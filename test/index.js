@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = chai.expect;
-var TIMEOUT = 500;
+var TIMEOUT = 1000;
 
 describe('subttribute', function(){
 
