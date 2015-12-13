@@ -1,0 +1,7 @@
+title: "Subttribute Markdown Example"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"      

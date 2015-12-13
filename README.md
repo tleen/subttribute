@@ -6,7 +6,10 @@ A sub-attribute system for constrained markup environments.
 
 Use JavaScript to extract HTML element attributes from the content of other attributes. Primary use case at this time is to add other attributes to *a* and *img* tags on Markdown files in [GitHub Pages](https://pages.github.com/).
 
-## Example
+## Examples
+
+
+### HTML
 
 See [example/index.html](example/index.html) or [run it live](https://rawgit.com/tleen/subttribute/master/example/index.html):
 
@@ -38,9 +41,18 @@ Would end up looking like
 </html>
 ```
 
-Lets say you were using this in Markdown with the JavaScript included elsewhere in the template:
+### Markdown
+
+Assuming the subttribute JavaScript included elsewhere in the template:
 
 ```markdown
-![alt text ~ id: image-two ~ class: border border-red ~ title: Some new title tag](http://lorempixel.com/g/200/100/)
+![some alt tag](http://lorempixel.com/g/200/100/ "title text ~ id: image-one ~ class: border border-purple ~ title: Some new title tag")
+![alt text ~ id: image-two ~ class: border border-red](http://lorempixel.com/g/200/100/ "Some title tag")
 ```
 
+Will eventually set the attributes on the images:
+
+```html
+<p><img src="http://lorempixel.com/g/200/100/" alt="some alt tag" title="Some new title tag" id="image-one" class="border border-purple"></p>
+<p><img src="http://lorempixel.com/g/200/100/" alt="alt text" title="Some title tag" id="image-two" class="border border-red"></p>
+```
