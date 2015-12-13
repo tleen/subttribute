@@ -1,6 +1,6 @@
 {
   "name": "subttribute",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript to extract HTML element attributes from the content of other attributes.",
   "main": "index.js",
   "scripts": {
