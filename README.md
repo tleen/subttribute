@@ -11,7 +11,7 @@ Use JavaScript to extract HTML element attributes from the content of other attr
 
 ### HTML
 
-See [example/index.html](example/index.html) or [run it live](https://rawgit.com/tleen/subttribute/master/example/index.html):
+See [examples/html/index.html](examples/html/index.html) or [run it live](https://rawgit.com/tleen/subttribute/master/example/index.html):
 
 The attributes are defined within the title or alt attributes on any element. They are seperated by the *~* character. The section preceding the first *~* is the actual content you want to end up in that attribute. The other are a series of *:* seperated attribute:value pairs. These will be attached to the same element.
 
@@ -41,9 +41,11 @@ Would end up looking like
 </html>
 ```
 
+Although you can set the attributes yourself in HTML the place where subttribute really shines is in:
+
 ### Markdown
 
-Assuming the subttribute JavaScript included elsewhere in the template:
+Assuming the subttribute JavaScript included elsewhere [in the template](examples/markdown/_layouts/default.html):
 
 ```markdown
 ![some alt tag](http://lorempixel.com/g/200/100/ "title text ~ id: image-one ~ class: border border-purple ~ title: Some new title tag")
@@ -56,3 +58,5 @@ Will eventually set the attributes on the images:
 <p><img src="http://lorempixel.com/g/200/100/" alt="some alt tag" title="Some new title tag" id="image-one" class="border border-purple"></p>
 <p><img src="http://lorempixel.com/g/200/100/" alt="alt text" title="Some title tag" id="image-two" class="border border-red"></p>
 ```
+
+See [the example](examples/markdown/) for Jekyll/Markdown (GitHub Pages-style) usage.
