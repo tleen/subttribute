@@ -3,7 +3,7 @@
 *
 * Script to run in browser context, will scan through title and alt tags
 * look for attribute's hidden inside of those tags in the form:
-* title="actual title | attribute name: attribute value | ..."
+* title="actual title ~ attribute name: attribute value ~ ..."
 * will then remove those embedded attributes and stick them on the 
 * element.
 */
